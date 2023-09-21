@@ -16,8 +16,10 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
+        $name = fake()->name();
         return [
-            'name' => fake()->name(),
+            'name' => $name,
+            'system_name' => strtolower($name),
             'description' => fake()->text(200),
             'price' => fake()->numberBetween(10, 100),
         ];
