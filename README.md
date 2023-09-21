@@ -68,10 +68,12 @@
         STRIPE_WEBHOOK_SECRET=
     ```
 
-    2. run migrations
+    2. composer install
+
+    3. run migrations
         - php artisan migrate:fresh --seed
 
-    3. run application
+    4. run application
         - php artisan serve
 
     ##
